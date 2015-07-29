@@ -58,6 +58,7 @@ gulp.task('en', () =>
     relativeFields: true
   })
     .pipe(header('// GENERATED FILE\nexport default '))
+    .pipe(footer(';'))
     .pipe(gulp.dest('./src'))
 );
 
